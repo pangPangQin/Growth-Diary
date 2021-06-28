@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { DataViewModule } from 'primeng/dataview';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
+import { AppRoutingModule } from './app-routing.module';
+import { DannyGrowthModule } from './DannyGrowth/DannyGrowth.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,10 @@ import { DropdownModule } from 'primeng/dropdown';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     DataViewModule,
-    DropdownModule
+    DropdownModule,
+    DannyGrowthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
